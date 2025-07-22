@@ -1,15 +1,1 @@
-public src > api > assets components S adviserContact > applicationStatus > chatbot > chatbotlcon chatForm > chatMessage dashboard > dashboardTwo ^ grid > highCharts home > incomeTaxPieChart > pensionGrid 
-E8 
-C\barshaMhackathonkcara-fe 
-> > > > > < 
-policyTerms 
-items 
-statusPieChart 
-suggestions 
-video 
-mock 
-routes 
-store 
-App.CSs 
-App.tsx 
-index.css
+gitignore eslint.config.js < index.html package-lock.json package.json README.md tsconfig.app.json TS tsconfig.json tsconfig.node.json vite.config.ts
