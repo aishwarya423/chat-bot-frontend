@@ -1,0 +1,79 @@
+.app-status-card {
+  width: 100%;
+  max-width: 240px;
+  padding: 14px 16px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  font-family: "Inter", sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-top: 10px auto;
+}
+
+.app-status-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.app-status-header {
+  margin-bottom: 10px;
+}
+
+.app-status-header p {
+  margin: 5px 0;
+}
+.app-status-header h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2cb04f;
+  margin: 0;
+}
+
+.status-badge {
+  padding: 3px 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+  background: #2cb04f;
+  border-radius: 12px;
+  text-transform: uppercase;
+}
+
+.app-status-body {
+  margin-bottom: 12px;
+}
+
+.app-status-body .label {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.app-status-body .value {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.app-status-footer {
+  text-align: right;
+}
+
+.details-btn {
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 6px;
+  background: #2cb04f;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.details-btn:hover {
+  background: #158232;
+}

@@ -1,0 +1,48 @@
+.annuity-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 8px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #ddd; /* Border around the whole table */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.annuity-table {
+  width: 100%;
+  border-collapse: collapse; /* Important for consistent borders */
+  font-size: 0.85rem;
+  color: #333;
+}
+
+.annuity-table th,
+.annuity-table td {
+  padding: 8px 12px;
+  text-align: left;
+  border: 1px solid #ddd; /* Cell borders */
+}
+
+.annuity-table thead {
+  background: #f6f6f6;
+}
+
+.annuity-table th {
+  font-weight: 600;
+  color: #222;
+}
+
+.annuity-table tbody tr:nth-child(even) {
+  background: #fafafa;
+}
+
+.annuity-table tbody tr:hover {
+  background: #f0f7f0;
+}
+
+@media (max-width: 520px) {
+  .annuity-table th,
+  .annuity-table td {
+    padding: 6px 8px;
+    font-size: 0.8rem;
+  }
+}

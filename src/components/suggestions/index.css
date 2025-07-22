@@ -1,0 +1,121 @@
+.suggestions-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0.5rem 1rem;
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.suggestions-container {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1rem;
+  position: relative;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.4s ease forwards;
+  box-sizing: border-box; /* Ensure padding doesn't affect layout */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.suggestions-heading {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.suggestions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem; /* Reduced gap */
+  width: 100%;
+  padding: 0; /* Remove extra padding */
+  margin: 0; /* Remove unwanted margins */
+}
+
+.suggestion-button {
+  background-color: #f1f3f5;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1rem; /* Adjusted padding */
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #333;
+  text-align: left;
+  transition: background 0.2s ease, transform 0.1s ease;
+  box-sizing: border-box; /* Prevent inner padding overflow */
+}
+
+.suggestion-button:hover {
+  background-color: #e2e6ea;
+  transform: translateY(-1px);
+}
+
+.suggestion-title {
+  font-weight: 500;
+  margin: 0; /* Remove default margin */
+}
+
+.suggestion-desc {
+  display: none;
+}
+
+.close-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.close-icon:hover {
+  background: #e60000;
+}
+
+.toggle-suggestions-btn {
+  background: #007bff;
+  color: #fff;
+  padding: 0.4rem 0.9rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.toggle-suggestions-btn:hover {
+  background: #0056b3;
+  transform: scale(1.04);
+}
+
+@media (prefers-color-scheme: dark) {
+  .suggestion-button {
+    background-color: #2e2e2e;
+    color: #f1f1f1;
+  }
+  .suggestion-button:hover {
+    background-color: #3b3b3b;
+  }
+}

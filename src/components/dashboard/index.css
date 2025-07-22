@@ -1,0 +1,77 @@
+.dashboard-wrapper {
+  width: 70%;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  font-family: "Inter", sans-serif;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  color: #333;
+  font-size: 0.95rem; /* Slightly bigger font */
+}
+
+.dashboard-title {
+  font-size: 1.3rem; /* Increased */
+  margin-bottom: 1rem;
+}
+
+.dashboard-section {
+  margin-bottom: 1.5rem;
+}
+
+.account-summary {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.account-card {
+  background: #f5f5f5;
+  padding: 12px 15px;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
+  font-size: 1rem; /* Bigger */
+}
+
+.chart-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0;
+}
+
+.transaction-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.transaction-list li {
+  background: #fafafa;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.action-buttons button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #2cb04f;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+}
+
+.action-buttons button:hover {
+  background: #158232;
+}
