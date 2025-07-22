@@ -1,1 +1,17 @@
-gitignore eslint.config.js < index.html package-lock.json package.json README.md tsconfig.app.json TS tsconfig.json tsconfig.node.json vite.config.ts
+import axios, ( AxiosError ) from 'axios'; 
+Hi. E ‣ 
+interface QueryDate ( query: string: 
+interface ApiResponss ( success: boolean; message: string; data?: unknown; 
+const fetchpensionDetnils - async (dato: QueryDate): PromisecapiResponse I nul1> -> ( try const response - aalt axios.post<apiResponse>( "https://your-backend-api.com/endpoint', data, t 
+headers: ( 
+'Content-Type': 'application/ison', ). 
+): 
+return response..dato; )catch (error) 1 
+if (axios.isAxiosError(error)) ( 
+const xiosError s error as AxiosError; 
+if (axiosError.response) ( console.erroc("Server Error:', axiosError.response.data); )else if (axiosError.request) ( consoleerror(Network Error:', axiosError.message); ) else f console.error( Unexpected Error:', axiosEcror.message); 
+) else ( 
+I 
+console.ecror("Unknown Error:", error); 
+return null; 
+export default fetchpensionDetails;
